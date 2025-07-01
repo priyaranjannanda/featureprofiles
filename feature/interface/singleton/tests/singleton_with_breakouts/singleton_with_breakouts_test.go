@@ -159,8 +159,6 @@ func rebootDUT(t *testing.T, dut *ondatra.DUTDevice) {
 			t.Logf("Device rebooted successfully with received time: %v", currentTime)
 			break
 		}
-
-		t.Log("Wait for reboot to be started")
 	}
 	startReboot := time.Now()
 	t.Logf("Waiting for DUT to boot up by polling the telemetry output.")
